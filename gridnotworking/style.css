@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(143, 123, 123,0.4);
+}
+.container{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 60%;
+    width: 50%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-between;
+    grid-column-gap: 655px; */
+    
+    display: flex;
+
+    /* below is the problem that I am having, I assume that there is supposed to be space between the elements but its not working */
+    
+}
+.containerone{
+    width: 40%;
+    height: 100%;
+    background-color: yellow;
+}
+.containertwo{
+    width: 40%;
+    height: 100%;
+    background-color: yellow;
+}
+/* .container .brightness{
+    flex-basis: 40%;
+    width: 70px;
+    height: 70px;
+    flex-grow: 0;
+    background-color: black;
+}
+.container .saturation{
+    flex-basis: 40%;
+    flex-grow: 0;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+}
+.container .inversion{
+    flex-basis: 40%;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+}
+.container .grayscale{
+    flex-basis: 20%;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+} */

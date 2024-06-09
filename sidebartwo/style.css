@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    background-color: yellowgreen;
+}
+.sidebar{
+    height: 100vh;
+    width: 20vw;
+    background-color: rgb(67, 109, 126);
+    
+}
+.title{
+    position: relative;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+.main-nav-container{
+    margin-top: 30px;
+    background-color: rgb(229, 130, 130);
+    height: 70%;
+}
+.navelement{
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    gap: 15px;
+    height: 8vh;
+    background-color: yellow;
+    border: 2px solid black;
+    cursor: pointer;
+    
+}
+.navelement:hover{
+    background-color: red;
+    color: white;
+    transform: translate(20px);
+    transition: 1s;
+}
+.navelement:not(:hover) {
+    transition: 1s;
+} 
+.navelement img{
+    width: 2em;
+    height: 2em;
+}
+.cancel{
+    position: absolute;
+    top: 18%;
+    right: 3%;
+}
+.cancel img{
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+}
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(/pic-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 34px 55px 32px 4px rgba(17,29,196,0.17) inset;
+-webkit-box-shadow: 34px 55px 32px 4px rgba(17,29,196,0.17) inset;
+-moz-box-shadow: 34px 55px 32px 4px rgba(17,29,196,0.17) inset;
+    
+    width: 100% ;
+    height: 100vh;
+}
+.menu-icon{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0,0.5);
+    display: none;
+}
+.menu-icon img{
+    width: 6em;
+    height: 6em;
+    cursor: pointer;
+}
+.tableContainer{
+    width: 80%;
+    height: 70%;
+    background-color: #fff5;
+    border-radius: 4%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+td img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-left: .5rem;
+    vertical-align: middle;
+}
+
+table{
+    width: 82vw;
+    height: 90vh;
+    backdrop-filter: blur(3px);
+    
+}

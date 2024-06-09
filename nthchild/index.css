@@ -1,0 +1,119 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.card-container{
+    width: 70%;
+    height: 80%;
+    background: url(/images/ed0da054399387.595a448cd7ead.jpg);
+    
+   
+    left: 350px;
+    position: relative;
+    
+}
+.cards{
+    width: 30%;
+    height: 70%;
+    border-radius: 20px;
+   
+    
+}
+.cards:hover:not(.active).left {
+    transform: translateX(-50%) rotate(-10deg) scale(0.9);
+}
+
+.cards:hover:not(.active).right {
+    transform: translateX(50%) rotate(10deg) scale(0.9);
+}
+
+.cards.left {
+    transform: translateX(-50%) scale(0.9);
+}
+
+.cards.right {
+    transform: translateX(50%) scale(0.9);
+}
+
+.cards.active {
+    z-index: 5;
+    position: relative;
+}
+.one{
+    position: absolute;
+    background: url(/images/card-AceSpades.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    left: 350px;
+    top: 20px;
+
+    cursor: move;
+    /* transition: 0.5s; */
+    
+}
+/* .one:hover{
+    transform: rotate(20deg) scale(1.5, 1.5);
+    
+} */
+.two{
+    position: absolute;
+    background: url(/images/card-back-Blue.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    left: 300px;
+    top: 70px;
+    
+}
+.three{
+    position: absolute;
+    background: url(/images/card-JackClubs.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    left: 240px;
+   
+    top: 120px;
+}
+.four{
+    /* position: absolute; */
+    background: url(/images/card-KingHearts.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    left: 190px;
+    top: 160px;
+    
+}
+.five{
+    /* position: absolute; */
+    background: url(/images/card-QueenDiamonds.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    left: 80px;
+    top: 200px;
+    
+}
+.new{
+    position: relative;
+    width: 1500px;
+    height: 100vh;
+    background-color: green;
+}
+.class3{
+    background-color: red;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+

@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.bgContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 50px;
+    width: 1200px;
+    height: 80vh;
+    border: 2px black solid;
+    border-radius: 30px;
+}
+.box{
+    background-color: yellow;
+    width: 20em;
+    height: 30em;
+    border-radius: 30px;
+    
+}
+
+@media screen and (min-width: 393px) and (max-width: 400px) {
+    
+    .bgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    .box {
+      background-color: red;
+    }
+  }
